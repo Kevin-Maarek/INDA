@@ -26,6 +26,9 @@
 
 ועוד כמה שאלות מורכבות יותר ומורכבות פחות, אתם מוזמנים לאתגר :-)
 
+*תהליך ההעלאת קובץ הפידבקים יכול לקחת זמן אז כדי לקצר אני מצרף את קובץ הוקטורים שאותו מעלים לQDRANT, נכנסים לhttp://localhost:6333/dashboard#/collections (לאחר הרצה בדוקר) ואז לחיצה על UPLOAD_SNAPSHOT ובcollection name לרשום feedback_embeddings ואז להעלות את הקובץ הנ"ל.
+קישור לקובץ הוקטורים: https://drive.google.com/file/d/1Nrjm3T8jpcDA0Iqua4vkblHKbc0h5NVU/view?usp=sharing
+
 לשאלות או בעיה בהרצה - 0542492505 קווין
 
 
