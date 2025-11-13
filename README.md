@@ -1,11 +1,11 @@
-# 📘 README — מערכת ניתוח משובים מבוססת DSL + RAG
+# 📘 מערכת ניתוח משובים
 
 מערכת זו כוללת 3 רכיבים עיקריים:
 
-1. **Query Service** — שירות יצירת ה־DSL וביצוע שאילתות (פורט 8004)  
-2. **Indexing Service** — שירות קליטת CSV + יצירת אמבדינגים והכנסה ל־Qdrant (פורט 8010)  
-3. **Frontend (Next.js)** — ממשק משתמש גרפי (פורט 3000)  
-4. **Qdrant** — מסד נתוני וקטורים (רץ בדוקר מקומי)
+1. **Query Service** 
+2. **Indexing Service**  
+3. **Frontend (Next.js)**
+4. **Qdrant** 
 
 ---
 
@@ -14,9 +14,9 @@
 INDA/  
 │  
 ├── backend/  
-│   ├── query_service/           ← שירות השאילתות וה־DSL  
-│   ├── indexing_service/        ← שירות האינדוקס  
-│   ├── .env                     ← קובץ משתני סביבה לשני השירותים  
+│   ├── query_service/           
+│   ├── indexing_service/       
+│   ├── .env                      
 │  
 └── frontend/  
     └── (קבצי Next.js)
@@ -40,12 +40,6 @@ docker run -p 6333:6333 qdrant/qdrant
 cd INDA\backend  
 uvicorn query_service.app:app --host 0.0.0.0 --port 8004  
 
-השירות הזה אחראי על:  
-• הבנת השאלה של המשתמש  
-• יצירת DSL אוטומטי  
-• הפעלת פונקציות כמו fetch_all_feedbacks, filter_by_level, group_by_topic  
-• ביצוע חישובים ושליפת נתונים מ־Qdrant  
-
 ---
 
 ### 🟧 שלב 3 — הפעלת Indexing Service (פורט 8010)
@@ -53,11 +47,7 @@ uvicorn query_service.app:app --host 0.0.0.0 --port 8004
 בטרמינל נוסף:  
 cd INDA\backend  
 uvicorn indexing_service.app:app --host 0.0.0.0 --port 8010  
-
-השירות הזה מאפשר:  
-• העלאת CSV דרך הפרונט  
-• יצירת אמבדינגים לכל שורה  
-• הכנסת הווקטורים לקולקציה ב־Qdrant  
+ 
 
 ---
 
@@ -81,7 +71,7 @@ http://localhost:3000
 • הוספת זיכרון לשיחה מתמשכת  
 • יצירת DSL Functions חדשות אוטומטית (self-evolving DSL)  
 • הוספת Auth בסיסי (JWT/cookie)  
-• 
+
 ---
 
 ##
