@@ -1,0 +1,153 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="vIHh1gRaFLSO9YuEpxwv">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CNz1MngtKGNIHejk7EEp-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-1" target="CNz1MngtKGNIHejk7EEp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-6" value="uploade csv file" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-5">
+          <mxGeometry x="0.0615" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-4" target="CNz1MngtKGNIHejk7EEp-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-12" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;מעביר את הקובץ ל&lt;/span&gt;&lt;br style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;&amp;nbsp;process_csv_to_qdrant()&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-11">
+          <mxGeometry x="-0.0947" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-4" value="&lt;br&gt;indexing_service/POST&lt;br&gt;ingest_csv" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="183" y="280" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="758" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-15" value="שולח את שם השירות&lt;br&gt;למודל שפה שיתרגם אותו לעברית" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-14">
+          <mxGeometry x="0.3395" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-9" value="&lt;div&gt;&lt;br&gt;בודק עם קיים הקולקשיין ב&lt;br&gt;qdrant&lt;br&gt;אם לא אז יוצר חדש&lt;br&gt;&lt;br&gt;מפצל את עמודת&lt;br&gt;serviceName&lt;br&gt;לשם שירות ושם משרד&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="493" y="210" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-16" value="LLM" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="723" y="410" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-17" target="CNz1MngtKGNIHejk7EEp-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-25" value="שמירת כל הנתונים בתור&lt;br&gt;payloads&lt;br&gt;ואת הוקטורים שנוצרו&lt;br&gt;לכל וקטור מתאים" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-24">
+          <mxGeometry x="-0.1222" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-17" value="EMBEDDING" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="493" y="410" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-16" target="CNz1MngtKGNIHejk7EEp-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-21" value="שולח את טקסט הפידבק&lt;br&gt;ואת שם השירות בעברית&lt;br&gt;למודל אמבדינג" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-20">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-22" value="&lt;div&gt;Qdrant&lt;br&gt;feedback_embeddings&lt;/div&gt;1.service_vector&lt;br&gt;2.text_vector" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="173" y="375" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-26" value="העלאת קובץ פידבקים" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="363" y="160" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-27" value="שליחת שאילתא" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="363" y="550" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-30" target="CNz1MngtKGNIHejk7EEp-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-29" value="uploade csv file" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-28">
+          <mxGeometry x="0.0615" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-30" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="23" y="620" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-31" value="query_service/POST&lt;br&gt;query" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="163" y="630" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-32" target="CNz1MngtKGNIHejk7EEp-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-40" value="FLOW&lt;br&gt;נשלח לרכיב&lt;br&gt;שמבצע ומפעיל את הפונקציות&lt;br&gt;בסיסיות ומורכבות&lt;br&gt;שמשתמשות בין היתר&lt;br&gt;במודל שפה ואמבדינג" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-38">
+          <mxGeometry x="0.02" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-32" value="LLM" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="523" y="620" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.015;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-31" target="CNz1MngtKGNIHejk7EEp-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-34" value="שולח למודל שפה את&lt;br&gt;בקשת המשתמש יחד&lt;br&gt;עם פרופט מפורט&lt;br&gt;שמייצר&lt;br&gt;FLOW&lt;br&gt;בעזרת פונקציות קיימות&lt;br&gt;כדי לקבל תוצאה סופית&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-33">
+          <mxGeometry x="-0.0334" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CNz1MngtKGNIHejk7EEp-35" target="CNz1MngtKGNIHejk7EEp-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-43" value="שולח&lt;br&gt;תוצאה" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CNz1MngtKGNIHejk7EEp-42">
+          <mxGeometry x="-0.3714" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-35" value="Executor&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="763" y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-41" value="Frontend&lt;br&gt;----------&lt;br&gt;resukt" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="758" y="760" width="90" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-44" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3" y="540" as="sourcePoint" />
+            <mxPoint x="833" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-45" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="160" as="sourcePoint" />
+            <mxPoint x="840" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-46" value="רכיבים" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="363" y="10" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-48" value="LLM" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="55" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-49" value="EMBEDDING" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="208" y="50" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-50" value="&lt;div&gt;Qdrant&lt;br&gt;Vector DB&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-51" value="Frontend&lt;br&gt;-----------&lt;br&gt;next.js" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="516" y="45" width="77" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CNz1MngtKGNIHejk7EEp-52" value="FastAPI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="653" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
