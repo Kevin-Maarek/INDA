@@ -11,7 +11,7 @@
 
 ## 🧩 מבנה הפרויקט
 
-INDA2/  
+INDA/  
 │  
 ├── backend/  
 │   ├── query_service/           ← שירות השאילתות וה־DSL  
@@ -37,7 +37,7 @@ docker run -p 6333:6333 qdrant/qdrant
 ### 🟦 שלב 2 — הפעלת Query Service (פורט 8004)
 
 בטרמינל:  
-cd C:\Users\davar\INDA2\backend  
+cd INDA\backend  
 uvicorn query_service.app:app --host 0.0.0.0 --port 8004  
 
 השירות הזה אחראי על:  
@@ -51,7 +51,7 @@ uvicorn query_service.app:app --host 0.0.0.0 --port 8004
 ### 🟧 שלב 3 — הפעלת Indexing Service (פורט 8010)
 
 בטרמינל נוסף:  
-cd C:\Users\davar\INDA2\backend  
+cd INDA\backend  
 uvicorn indexing_service.app:app --host 0.0.0.0 --port 8010  
 
 השירות הזה מאפשר:  
@@ -64,7 +64,7 @@ uvicorn indexing_service.app:app --host 0.0.0.0 --port 8010
 ### 🟩 שלב 4 — הפעלת הפרונט־אנד (Next.js) (פורט 3000)
 
 בטרמינל חדש:  
-cd C:\Users\davar\INDA2\frontend  
+cd INDA\frontend  
 npm install  
 npm run dev  
 
@@ -81,13 +81,6 @@ http://localhost:3000
 
 ## 🔧 קובץ ה־.env לשירותי הבקאנד (backend/.env)
 
-QDRANT_URL=http://localhost:6333  
-QDRANT_COLLECTION_NAME=feedback  
-OPENAI_API_KEY=your-key-here  
-EMBEDDING_MODEL=text-embedding-3-large  
-LLM_MODEL=gpt-4.1  
-
-ודא שהקובץ backend/.env קיים, ושני השירותים משתמשים בו.
 
 ---
 
@@ -97,17 +90,7 @@ LLM_MODEL=gpt-4.1
 • הוספת זיכרון לשיחה מתמשכת  
 • יצירת DSL Functions חדשות אוטומטית (self-evolving DSL)  
 • הוספת Auth בסיסי (JWT/cookie)  
-• תמיכה ב־Pagination מול Qdrant  
-
+• 
 ---
 
-## 🎉 סיכום
-
-המערכת מאפשרת:  
-• קליטת שאלה בשפה טבעית (בעברית)  
-• יצירת DSL אוטומטית  
-• ביצוע חישובים על דאטה אמיתי (Qdrant + אמבדינגים)  
-• אינדוקס CSV בלחיצת כפתור  
-• עבודה מול פרונט מודרני (Next.js)  
-
-לאחר הרמת Qdrant ושני שירותי הבקאנד + הפרונט — הכל עובד מקצה לקצה 🧠📊💬
+##
